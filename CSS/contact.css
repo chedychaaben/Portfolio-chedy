@@ -1,0 +1,63 @@
+
+.hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+    border-radius: 20px;
+}
+label{
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+.go{
+    padding: 11px 6px;
+    color: #fff;
+    outline: 0;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {   
+    top: -35px;
+    font-size: 14px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row .input-group{
+    flex-basis: 50%;
+}
